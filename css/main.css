@@ -1,21 +1,72 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Gafata:400");
 :root {
   --colorA: #253434;
   --ColorB: #66958d;
   --backgroundPage: #f8e0d3;
-  --detailPage: #e09d7a;
+  --homePage: #e09d7a;
   --headerTitle: #af4433;
 }
+html {
+  font-size: 100%;
+} /*16px*/
+
+p {
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: "Gafata", sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 4.209rem;
+}
+
+h2 {
+  font-size: 3.157rem;
+}
+
+h3 {
+  font-size: 2.369rem;
+}
+
+h4 {
+  font-size: 1.777rem;
+}
+
+h5 {
+  font-size: 1.333rem;
+}
+
+small,
+.text_small {
+  font-size: 0.75rem;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   font-size: 0.9rem;
   min-height: 100vh;
   width: 100%;
+  background: white;
+  font-family: "Gafata", sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #000000;
 }
 
 li {
@@ -26,9 +77,10 @@ a {
   text-decoration: none;
 }
 
-.masheader {
+.header{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--headerTitle);
 }
 
 .navbar {
@@ -36,6 +88,7 @@ a {
   justify-content: space-around;
   align-items: center;
   padding: 1rem 1.5rem;
+
 }
 
 .hamburger {
@@ -63,20 +116,34 @@ a {
 }
 
 .nav-link {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: 400;
- color:black;
+  color: black;
 }
 
-.nav-link:hover {
-
-}
 
 .nav-logo {
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: 500;
   color: var(--headerTitle);
 }
+
+#home-page {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 16rem 3rem;
+  text-align: center;
+  color: black;
+  width: 100%;
+  margin-top: 3rem;
+ 
+}
+
+
+
+
+
 
 @media only screen and (max-width: 60rem) {
   .nav-menu {
@@ -89,11 +156,14 @@ a {
     border-radius: 10px;
     text-align: center;
     transition: 0.3s;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+   
   }
+
+
 
   .nav-menu.active {
     left: 0;
+
   }
 
   .nav-item {
