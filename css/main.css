@@ -10,9 +10,7 @@
 html {
   font-size: 100%;
 } /*16px*/
-a{
-color: black;
-}
+
 p {
   margin-bottom: 1rem;
 }
@@ -84,8 +82,11 @@ img {
 }
 li {
   list-style: none;
+  border-bottom: 1px solid var(--detailPage);
 }
-
+.active{
+background-color: var(--backgroundPage);
+}
 a {
   text-decoration: none;
   /* border-bottom: 1px solid var(--detailPage); */
@@ -155,7 +156,7 @@ height: 3rem;
   color: black;
   width: 100%;
   height: 100%;
-  border-bottom: 1px solid var(--detailPage);
+  border-bottom: 1px solid var(--backgroundDetail);
 }
 #cards{
   display: grid;
@@ -177,7 +178,8 @@ height: 3rem;
 #contact-links{
 padding-top:3rem;
 }
-#contact-links button{
+.get-in-touch button,
+#contact-links  button{
   padding: 1.3em 3em;
   font-size: 0.9rem;
   letter-spacing: 0.01rem;
@@ -209,7 +211,27 @@ transform: translateY(-9px);
   margin-right: auto;
   padding: rem 3rem;
 }
+.about-page
+{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content:space-around;
 
+}
+.about-page a{
+color: black;
+background-color: var(--backgroundPage);
+}
+.about-page p{
+font-size: 1.5rem;
+}
+
+
+.about-page h1{
+border-bottom: 1px solid var(--backgroundDetail);
+text-align: center;
+}
 #button-project {
   color: #3d3d3d;
   background: #fff;
@@ -217,8 +239,42 @@ transform: translateY(-9px);
   box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
 }
+.column button{
+text-align: center;
+border-radius: 20px;
+padding: 1.2rem 1rem 1rem;
+padding-bottom: 1rem;
+font-size: 1rem;
+color: #000;
+background-color:  var(--homePage);
+border: none;
+cursor: pointer;
 
+}
+.project-cards .column .card {
+  border-radius: 40px;
+  text-align: center;
+}
+.project-cards .column .card:hover{
+color: black;
+background-color: whitesmoke;
+}
 
+.project-cards button{
+margin-bottom: 1rem;
+}
+.project-cards img{
+  border-radius: 40px;
+  height: 500px;
+  width: 100%;
+}
+
+.self-image{
+  border-radius: 50%;
+  height: 600px;
+  width: 400px;
+  flex-basis: 70%
+}
 
 
 @media only screen and (max-width: 60rem) {
