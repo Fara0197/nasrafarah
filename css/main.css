@@ -168,6 +168,7 @@ height: 3rem;
   border-radius: 40px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
+  
 }
 .card:hover{
   background-color: var(--backgroundPage);
@@ -265,18 +266,21 @@ background-color: whitesmoke;
 .project-cards button{
 margin-bottom: 1rem;
 }
+.project-cards button:hover{
+  background-color: var(--backgroundPage);
+  }
 .project-cards img{
   border-radius: 40px;
   height: 100%;
   width: 100%;
-  opacity: 0.7;
+
   border-bottom: 1px solid var(--backgroundDetail);
   ;
 }
 
 .project-cards img:hover{
-  
-  opacity: 1;
+  opacity: 0.7;
+
 }
 
 .self-image{
