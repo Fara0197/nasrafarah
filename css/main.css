@@ -159,11 +159,13 @@ height: 3rem;
   border-bottom: 1px solid var(--backgroundDetail);
 }
 #cards{
+
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1rem;
 }
 .card{
+  border-radius: 40px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
 }
@@ -265,8 +267,16 @@ margin-bottom: 1rem;
 }
 .project-cards img{
   border-radius: 40px;
-  height: 500px;
+  height: 100%;
   width: 100%;
+  opacity: 0.7;
+  border-bottom: 1px solid var(--backgroundDetail);
+  ;
+}
+
+.project-cards img:hover{
+  
+  opacity: 1;
 }
 
 .self-image{
