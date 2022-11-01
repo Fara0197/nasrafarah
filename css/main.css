@@ -209,10 +209,10 @@ a {
  margin-bottom: 2rem;
   margin-top: 2rem;
   padding: 2rem 1rem;
-  border-radius: 12px;
+  /* border-radius: 12px;
   box-shadow: 0 4px 8px 0 rgba(155, 105, 34, 0.575),
     0 6px 20px 0 rgba(255, 0, 0, 0);
-  animation: glide 2s ease-in-out alternate infinite;
+  animation: glide 2s ease-in-out alternate infinite; */
 }
 .image-about span{
 font-size: 3rem;
