@@ -28,7 +28,8 @@ h6 {
 
 h1 {
   margin-top: 0;
-  font-size: 4.209rem;
+  font-size: 3.5rem;
+  font-weight: bold;
 }
 
 h2 {
@@ -44,7 +45,8 @@ h4 {
 }
 
 h5 {
-  font-size: 1.333rem;
+  font-size: 1.322rem;
+  color: var(--detailText)
 }
 h6 {
   color: var(--detailPage);
@@ -84,6 +86,14 @@ img {
   width: 100%;
   height: 15vw;
   object-fit: cover;
+}
+#image-me{
+background-color: var(--backgroundPage);
+padding-top: 0.5rem;
+object-fit:fill;
+width: 260px;
+height: 300px;
+border-radius: 50%;
 }
 li {
   list-style: none;
@@ -153,18 +163,41 @@ a {
   margin: 0 auto;
 }
 #home-page {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   padding: 9rem 3rem;
-  text-align: center;
   color: black;
   width: 100%;
   height: 100%;
   border-bottom: 1px solid var(--backgroundDetail);
 }
+
+#home-card{
+  display: flex;
+  flex-direction: row-reverse;
+flex-wrap: wrap;
+}
+#home-card h4{
+margin-top: 0.5rem;
+}
+#home-card p{
+font-size: 1rem;
+margin-top: 1rem;
+}
+#home-card > .image{
+  flex: 1 0 0%;
+}
+
+#home-card > .text-home{
+  flex: 2 0 0%;
+  margin:auto 0;
+}
+#home-card > #image-me{
+  vertical-align:top;/* here */
+  max-width: 100%;
+  max-height: 300px;
+}
+
 #contact-links {
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 .get-in-touch button,
 #contact-links button {
@@ -195,6 +228,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   padding:  1.5rem;
+ 
 }
 .about-page,
 .about-section {
@@ -202,25 +236,10 @@ a {
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
-}
-
-.image-about {
- text-align: center;
- margin-bottom: 2rem;
   margin-top: 2rem;
   padding: 2rem 1rem;
-  /* border-radius: 12px;
-  box-shadow: 0 4px 8px 0 rgba(155, 105, 34, 0.575),
-    0 6px 20px 0 rgba(255, 0, 0, 0);
-  animation: glide 2s ease-in-out alternate infinite; */
 }
-.image-about span{
-font-size: 3rem;
-font-weight: bolder;
-text-align: center;
-color: var(--detailText);
 
-}
 .about-page a {
   color: black;
   background-color: var(--backgroundPage);
@@ -252,6 +271,7 @@ color: var(--detailText);
 display: grid;
 grid-template-columns: repeat(3, 1fr);
 grid-gap: 1rem;
+margin: 1rem;
 }
 
 
