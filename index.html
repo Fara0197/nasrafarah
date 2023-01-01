@@ -11,42 +11,41 @@
   </head>
 
   <body>
+   
     <header class="header">
-      <div class="navbar">
-      <div  class="name-logo">NasraFarah</div>
-        <ul class="nav-menu">
-          <li class="nav-item active">
-            <a href="./index.html" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="./about.html" class="nav-link">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="./work.html" class="nav-link">Projects</a>
-          </li>
+      <!-- Logo -->
 
-        </ul>
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </div>
-    </header>
+      <a href="#" class="logo">NasraFarah</a>
+      <!-- Hamburger icon -->
+      <input class="side-menu" type="checkbox" id="side-menu"/>
+      <label class="hamburger" for="side-menu"><span class="hamb-line"></span></label>
+      <!-- Menu -->
+      <nav class="nav">
+          <ul class="menu">
+              <li><a href="./index.html">Home</a> </li>
+              <li ><a href="./about.html">About</a></li>
+              <li><a href="./work.html">Work</a> </li>
+          </ul>
+      </nav>
+  </header>
 
     <div class="container">
       <section id="home-page">
         <div id="home-card">
           <div class="image">   
-          <img id ="image-me"src ="images/nasra.png" alt ="home-page-image"></div>
+          <img id ="image-me" src ="images/nasra-home-page.png" alt ="home-page-image"></div>
           <div class ="text-home">
             <h1>Hi, I'm Nasra</h1>
             <h4>Junior Front End Developer</h4>
+       
   
          
             <p>
              Knowledge and experience in user interface, web design and development.
+            
             </p>
+          
+            <h6>Based in Ottawa, ON</h6>
             <div id="contact-links">
               <a href="mailto:nasrafarah328@gmail.com" target="_blank"><button>Contact Me</button></a>
               <a href="mailto:nasrafarah328@gmail.com" target="_blank"><button>CV/Resume</button></a>
@@ -61,52 +60,62 @@
     
 
       <section id="home-bottom-page">
-        <h3>Recent Projects</h3>
+        <h3>Current Projects</h3>
         <p id="view-more-text"><a href ="./work.html">View all projects  <i class="fa-solid fa-arrow-right"></i> </a></p>
         <div class="home-page-projects">
           
-    <div class="home-page-card">
+
+
+  <div class="home-page-card">
       <div class="image-card-project"><img id ="project-images" src ="images/home-playlist.png"></div>
       <div class ="text-card-project">
-        <h4><a href ="https://nasra-playlist.netlify.app/"target="_blank" >Music Playlist</a></h4>
-        <i class="fa-2xl fa-brands fa-html5"></i>
-        <i class="fa-2xl fa-brands fa-css3"></i>
-        <i class="fa-2xl fa-brands fa-js"></i>
-        <h5>About</h5> <p>A HTML, CSS & JS based web application of a media playlist of mp3 files, animations. This application is hosted through Netlify. </p>
+        <h4><a href ="https://nasra-playlist.netlify.app/"target="_blank">Music Playlist</a></h4>
+        <i class="fa-xl fa-brands fa-html5"></i>
+        <i class="fa-xl fa-brands fa-css3"></i>
+        <i class="fa-xl fa-brands fa-js"></i>
+        <h5>About</h5> <p>A web application of a personalized media playlist of mp3 files. for further detail visit the github link below
+          of the features and how I came to built the application. </p>
         <ul>
           <h5>Skills</h5>
-          <li>An item</li>
-          <li>Another item</li>
+          <li>Languages: Vanilla JS, HTML, CSS</li>
+          <li>Git </li>
+          <li>Netlify hosting </li>
         </ul>
-        <button id ="project-links"><a id ="" target="_blank">Netlify Link</a></button>
-        <button id ="project-links"><a id ="" target="_blank">Github Link</a></button>
+        <div id = "project-links">
+          <button><a id ="" target="_blank">Github Link</a></button>
+          <button><a id ="" target="_blank">Netlify Link</a></button>
+        </div>
+      
     
 
       </div>
       </div>
-
- 
-    </div>
           
 
     <div class="home-page-card">
-      <div class="image-card-project"><img id ="project-images" src ="images/mobileview.png"></div>
+      <div class="image-card-project"><img id ="project-images" src ="images/moviles.png"></div>
      <div class ="text-card-project"> 
-       <h4  id ="id-project-image"><a href ="https://www.figma.com/proto/LRxkoBdjoPBA8aPa2viLvy/NasraFarah-FinalVisualMockup?node-id=0%3A1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=257%3A4272" target="_blank" >CareSpace Mockup</a></h4>
-      <i class="fa-2xl fa-brands fa-figma"></i>
-      <h5>About</h5> <p>A HTML, CSS & JS based web application of a media playlist of mp3 files, animations. This application is hosted through Netlify. </p>
+       <h4  id ="id-project-image">
+         <a href ="https://www.figma.com/proto/LRxkoBdjoPBA8aPa2viLvy/NasraFarah-FinalVisualMockup?node-id=0%3A1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=257%3A4272" target="_blank" >CareSpace Mockup</a>
+        </h4>
+      <i class="fa-xl fa-brands fa-figma"></i>
+      <h5>About</h5> <p> A UXD design process for an iOS 14 application called CareSpace. For further details visit my UXD portfolio and figma prototype through the links below.  </p>
       <ul>
         <h5>Skills</h5>
-        <li>An item</li>
-        <li>Another item</li>
+        <li>Platforms: Figma and Miro</li>
+        <li>UXD, UID</li>
+        <li>Implemented UX design process</li>
       </ul>
-  <button id ="project-links"><a id ="" target="_blank">UXD Portfolio Package</a></button>
-  <button id ="project-links"><a id ="" target="_blank">Figma Link</a></button>
+      <div id = "project-links">
+        <button><a id ="" target="_blank">UXD Portfolio Link</a></button>
+        <button><a id ="" target="_blank">Figma Link</a></button>
+      </div>
     </div>
      
     </div>
 
 
+    </div>
 
 
 
@@ -116,7 +125,7 @@
 
 
 
-        </div>
+    
      
 
 
