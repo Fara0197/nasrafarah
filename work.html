@@ -11,40 +11,61 @@
   </head>
 
   <body>
-    <header class="header">
-      <!-- Logo -->
-      <a href="#" class="logo">NasraFarah</a>
-      <!-- Hamburger icon -->
-      <input class="side-menu" type="checkbox" id="side-menu"/>
-      <label class="hamburger" for="side-menu"><span class="hamb-line"></span></label>
-      <!-- Menu -->
-      <nav class="nav">
-          <ul class="menu">
-              <li><a href="./index.html">Home</a> </li>
-              <li ><a href="./about.html">About</a></li>
-              <li><a href="./work.html">Work</a> </li>
-           
-          </ul>
-      </nav>
-  </header>
+    <nav>
+      <div class="logo">Nasra  Farah</div>
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a  href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a class="active" href="./work.html">Projects</a></li>
+
+      </ul>
+    </nav>
 
     <div class="container">
     
  <div class="project-cards">
   <h3>Projects</h3>
+  <div class="column">
+    <div class="card">
+      <div class="zoom">   <img src="./images/goals.png" alt="work-one"></div>
+   
+      <h5>Simple React Goals Checklist</h5>
+      <h6>React, CSS</h6>
+      <p>A personalized goals checklist based on React JS hosted through Netlify. Implemented the use of local storage, 
+        event listeners and UseState.
+      </p>
+      <a href="https://october-goals.netlify.app/" target="_blank"><button>View Project</button></a>
+    </div>
+  </div>
+
     <div class="column">
       <div class="card">
         <div class="zoom">   <img src="./images/playlist.png" alt="work-one"></div>
      
         <h5>Music Playlist</h5>
         <h6>HTML, CSS, JS</h6>
-        <p>A HTML5 media player that includes a playlist of mp3 files with CSS animations, Javascript-powered controls,
-          and is hosted through Netlify.</p>
-        <a href="https://nasra-playlist.netlify.app/" target="_blank"><button>view project</button></a>
+        <p>A Vanilla JS based web application of a personalized music playlist.
+          This web app inclues mp3 files with css animations, Javascript-powered controls and is hosted
+          through Netlify.</p>
+        <a href="https://nasra-playlist.netlify.app/" target="_blank"><button>View Project</button></a>
       </div>
     </div>
   
-   
+    <div class="column">
+      <div class="card">
+        <div class="zoom">   <img src="./images/moviles.png" alt="work-one"></div>
+     
+        <h5>CareSpace Prototype</h5>
+        <h6>Figma, UX, UI</h6>
+        <p> My UX design process for an iOS mobile application called CareSpace. 
+          CareSpace represents a network agency to find in-home care services for elderly people.</p>
+        <a href="https://www.figma.com/proto/LRxkoBdjoPBA8aPa2viLvy/NasraFarah-FinalVisualMockup?node-id=0%3A1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=257%3A4272" target="_blank"><button>View Project</button></a>
+      </div>
+    </div>
  
       
 
